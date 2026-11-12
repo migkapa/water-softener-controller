@@ -1,0 +1,406 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "f09f2a4d-6fe7-5e2c-baa7-62ab75590647")
+	(paper "A4")
+	(title_block
+		(title "Water Softener Controller")
+		(date "2026-11-10")
+		(rev "A")
+		(comment 1 "ESP32-C6 metered water softener valve controller, 12 V DC")
+	)
+	(lib_symbols)
+	(text "Rails:  +12V protected input rail (motor, relay, switched output)   VSYS diode-OR of +12V and USB VBUS (buck input)"
+		(exclude_from_sim no)
+		(at 25.4 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1181fb5a-2d21-5fbb-b1dc-e74603d94df0")
+	)
+	(text "Valve position, flow meter,"
+		(exclude_from_sim no)
+		(at 225.552 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30b10ea1-f4ab-5002-b7df-0e770d1bf791")
+	)
+	(text "ESP32-C6 module, USB-C,"
+		(exclude_from_sim no)
+		(at 93.472 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a75a7aa-b14e-5204-9805-63014a12ae3b")
+	)
+	(text "        +3V3 logic   +5V sensor supply   VBUS USB service port"
+		(exclude_from_sim no)
+		(at 25.4 117.348 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c543dfc-5523-5427-85ec-d3f9ba7395bf")
+	)
+	(text "3.3 V buck, 5 V sensor rail"
+		(exclude_from_sim no)
+		(at 27.432 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4eba58c0-5dee-53d3-9102-e70c4659d652")
+	)
+	(text "Regeneration sequence, metering and connectivity (Wi-Fi 6 / BLE / Thread) are firmware functions of the ESP32-C6."
+		(exclude_from_sim no)
+		(at 25.4 128.524 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70932fed-3fb9-5c03-bcab-8de917c160fb")
+	)
+	(text "DRV8876 H-bridge with"
+		(exclude_from_sim no)
+		(at 159.512 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "71731641-1cd1-5e38-a8d2-e638579bb9d3")
+	)
+	(text "ESD protection"
+		(exclude_from_sim no)
+		(at 225.552 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7363b52b-af61-559a-ac69-94acad5daa51")
+	)
+	(text "salt level, leak probe,"
+		(exclude_from_sim no)
+		(at 225.552 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7873ea62-47b9-5b81-996b-6da4e8fcc9f7")
+	)
+	(text "12 V input, fuse, TVS,"
+		(exclude_from_sim no)
+		(at 27.432 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90983417-4bf9-5f7b-9683-b05e44702e18")
+	)
+	(text "Signals between sheets use global labels. Field wiring lands on 3.5 mm pluggable terminal blocks."
+		(exclude_from_sim no)
+		(at 25.4 122.936 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "936e5eb0-0f30-54cb-9d20-93382110c7f2")
+	)
+	(text "ESP32-C6 metered water softener valve controller, 12 V DC"
+		(exclude_from_sim no)
+		(at 25.4 43.18 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "985de209-2150-5a2b-9869-ddc0e458ea34")
+	)
+	(text "RTC + backup, OLED, buttons,"
+		(exclude_from_sim no)
+		(at 93.472 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a90a441b-32bc-5e3b-b375-1afee3e7e301")
+	)
+	(text "current sense, aux relay,"
+		(exclude_from_sim no)
+		(at 159.512 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3653bec-32e5-5df7-931c-86d77664bff2")
+	)
+	(text "status LED, buzzer"
+		(exclude_from_sim no)
+		(at 93.472 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf445c5b-eefb-54db-bdea-fc115b3fd9be")
+	)
+	(text "Water Softener Controller"
+		(exclude_from_sim no)
+		(at 25.4 35.56 0)
+		(effects
+			(font
+				(size 3.5 3.5)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "daec5c37-121d-5dcf-825c-6079dab36a81")
+	)
+	(text "reverse protection,"
+		(exclude_from_sim no)
+		(at 27.432 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4e51594-a61f-5f0f-9de6-822af561235a")
+	)
+	(text "switched 12 V output"
+		(exclude_from_sim no)
+		(at 159.512 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f660f9d9-e967-5f4c-8574-240dea7a8657")
+	)
+	(sheet
+		(at 91.44 60.96)
+		(size 55.88 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1e8f1a07-367c-5dfe-843e-ce321cd610a7")
+		(property "Sheetname" "MCU"
+			(at 91.44 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 91.44 92.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "water_softener"
+				(path "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 60.96)
+		(size 55.88 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6a114e4e-5fa7-5646-a147-1de56c1fd8dc")
+		(property "Sheetname" "Power"
+			(at 25.4 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25.4 92.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "water_softener"
+				(path "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 60.96)
+		(size 55.88 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e9318d9f-8cdb-5424-b083-db9cf5b92614")
+		(property "Sheetname" "Valve drive"
+			(at 157.48 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "drive.kicad_sch"
+			(at 157.48 92.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "water_softener"
+				(path "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 223.52 60.96)
+		(size 55.88 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "eb18d97a-8b4e-5552-9b53-9001218804fe")
+		(property "Sheetname" "Sensors"
+			(at 223.52 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.6 1.6)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 223.52 92.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "water_softener"
+				(path "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

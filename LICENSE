@@ -1,0 +1,21 @@
+Water Softener Controller
+Copyright (c) 2026 migkapa
+
+This repository holds software and a hardware design. They are licensed
+separately, and both licences are permissive.
+
+Software: everything under scripts/
+    MIT License. Full text: LICENSES/MIT.txt
+
+Hardware design: the schematic, board and enclosure files and everything
+generated from them (the KiCad files in the top folder, enclosure/, 3d/ and
+output/)
+    CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0).
+    Full text: LICENSES/CERN-OHL-P-2.0.txt
+
+Under both licences the material is provided "as is", without warranty of any
+kind. The design has not been built, tested or reviewed; see README.md.
+
+The schematic symbols and footprints embedded in the KiCad files come from the
+KiCad libraries, which are licensed CC-BY-SA 4.0 with an exception that lets
+designs using them be licensed freely (https://www.kicad.org/libraries/license/).

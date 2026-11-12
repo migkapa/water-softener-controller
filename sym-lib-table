@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "water_softener") (type "KiCad") (uri "${KIPRJMOD}/water_softener.kicad_sym") (options "") (descr "Project symbols"))
+)

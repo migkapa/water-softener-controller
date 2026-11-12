@@ -1,0 +1,21 @@
+ok: board clear of the base
+ok: board clear of the cover
+ok: parts at least 0.3 mm from the base
+ok: parts at least 0.3 mm from the cover
+ok: parts at least 0.3 mm from the door
+ok: parts at least 0.3 mm from the lens
+ok: OLED module at least 0.3 mm from the cover
+ok: OLED module at least 0.3 mm from the lens
+ok: plugs at least 0.3 mm from the base
+ok: plugs at least 0.3 mm from the cover
+ok: plugs at least 0.3 mm from the door
+ok: buttons clear of the cover
+ok: buttons clear of the door
+ok: buttons clear of the base
+ok: light pipe clear of the cover
+ok: light pipe clear of the base
+ok: cover clear of the base
+ok: door clear of the cover
+ok: door clear of the base
+ok: lens clear of the cover
+tallest part on the board: 15.8 mm above the board surface

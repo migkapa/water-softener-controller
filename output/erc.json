@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T04:52:26",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647/6a114e4e-5fa7-5646-a147-1de56c1fd8dc",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647/1e8f1a07-367c-5dfe-843e-ce321cd610a7",
+            "violations": []
+        },
+        {
+            "path": "/Valve drive/",
+            "uuid_path": "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647/e9318d9f-8cdb-5424-b083-db9cf5b92614",
+            "violations": []
+        },
+        {
+            "path": "/Sensors/",
+            "uuid_path": "/f09f2a4d-6fe7-5e2c-baa7-62ab75590647/eb18d97a-8b4e-5552-9b53-9001218804fe",
+            "violations": []
+        }
+    ],
+    "source": "water_softener.kicad_sch"
+}
